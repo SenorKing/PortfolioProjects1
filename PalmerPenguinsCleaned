@@ -59,3 +59,6 @@ penguins %>% group_by(species, island) %>% drop_na() %>%
 
 ## Filter Penguins by species
 penguins %>% filter(species == "Adelie")
+
+## Mutate 
+penguins %>% mutate(body_mass_kg = body_mass_g/1000)
